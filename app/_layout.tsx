@@ -1,8 +1,5 @@
-import 'react-native-reanimated';
-
 import { appTheme, createdStyledTheme } from '@/src/theme/theme';
 
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { PaperProvider } from 'react-native-paper';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -15,9 +12,9 @@ const App: React.FC = () => {
     <SafeAreaProvider>
       <PaperProvider theme={appTheme}>
         <ThemeProvider theme={createdStyledTheme}>
-          <GestureHandlerRootView style={{ flex: 1 }}>
-            <Router />
-          </GestureHandlerRootView>
+          {/* <GestureHandlerRootView style={{ flex: 1 }}> */}
+          <Router />
+          {/* </GestureHandlerRootView> */}
         </ThemeProvider>
       </PaperProvider>
     </SafeAreaProvider>
